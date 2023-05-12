@@ -37,6 +37,7 @@ export const useTimer = (toggleStartHandler) => {
         setActivateInterval(true);
     };
     const restartTimer = () => {
+        toggleStartHandler()
         stopTimer();
         setTimer(0);
     };
